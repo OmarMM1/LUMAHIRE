@@ -3,25 +3,40 @@ const password = document.getElementById('password');
 const confirmPassword = document.getElementById('confirm-password');
 const form = document.querySelector('#register');
 const registerMessage = document.querySelector('.register-message');
+const userName = document.getElementById('name');
+const userPhone = document.getElementById('phone');
+const userAge = document.getElementById('age');
 
 let mainUsers = [
   {
     id: 1,
+    name: 'Luma Shrideh',
+    phone : '0123456789',
+    age : 25,
     email: 'luma@gmail.com',
     password: 'Asdfghjkl1*'
   },
   {
     id: 2,
+    name : 'Osama Khazali',
+    phone : '0123456789',
+    age : 27,
     email: 'osama@gmail.com',
     password: 'Asdfghjkl1*'
   },
   {
     id: 2,
+    name : 'Omar Momani',
+    phone : '0123456789',
+    age : 26,
     email: 'omar@gmail.com',
     password: 'Asdfghjkl1*'
   },
   {
     id: 2,
+    name : 'Sara Mahfzouz',
+    phone : '0123456789',
+    age : 25,
     email: 'sara@gmail.com',
     password: 'Asdfghjkl1*'
   },
@@ -68,6 +83,7 @@ form.addEventListener('submit' , (event) => {
     }
     return true;
   }
+  
   function hasUpperCase(password) {
     if (!(/[A-Z]/.test(password))) {
       registerMessage.textContent += "❌ Password must contain at least one uppercase letter.";
@@ -99,6 +115,9 @@ form.addEventListener('submit' , (event) => {
       
       const user = {
         id: users.length + 1,
+        name: userName.value,
+        phone : userPhone.value,
+        age : userAge.value,
         email: email.value,
         password: password.value
       }
@@ -139,6 +158,10 @@ if(customer[0].password===loginPassword.value
   console.log(customer[0].id);
   const userData = {
     id: customer[0].id,
+    name: customer[0].name,
+    phone : customer[0].phone,
+    age : customer[0].age,
+    email: customer[0].email,
     history: [],
   }
   loginMessage.textContent="Logged in successfully";

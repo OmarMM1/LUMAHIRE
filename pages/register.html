@@ -45,8 +45,15 @@
 
                 <div class="nav-containor-button justify-content-center">
                     <div class="nav-item">
-                        <a class="nav-link jobColor d-none" href="./jobsList.html">Jobs</a>
-                    </div>
+                        <a class="nav-link jobColor d-none" href="./jobsList.html"
+                          >Jobs</a
+                        >
+                      </div>
+                      <div class="nav-item">
+                        <a class="nav-link jobColor d-none" href="./userPage.html"
+                          >Profile</a
+                        >
+                      </div>
                     <button class="nav-button user-btn" onclick="window.location.href='./register.html'">
                         Register / Login
                     </button>
@@ -90,6 +97,18 @@
                 </div>
                 <div class="tab-pane fade" id="pills-register" role="tabpanel" aria-labelledby="tab-register">
                     <form id="register">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" id="name" class="form-control" />
+                        </div>
+                        <div class="mb-3">
+                            <label for="phone" class="form-label">Phone</label>
+                            <input type="tel" id="phone" class="form-control" />
+                        </div>
+                        <div class="mb-3">
+                            <label for="age" class="form-label">Age</label>
+                            <input type="number" id="age" class="form-control" />
+                        </div>
                         <div class="mb-3">
                             <label for="email" class="form-label">Email</label>
                             <input type="email" id="email" class="form-control" />

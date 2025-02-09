@@ -14,7 +14,7 @@ let filteredJobs =[]
 function jobQuery(job) {
   
   return `
-                                  <div class="job-item">
+                            <div class="job-item">
                             <div class="row align-items-center gy-3">
                               <!-- Logo Column -->
                               <div class="col-md-2 text-center text-md-center">
@@ -159,10 +159,7 @@ fetch('../server/data.json')
       const jobElement = document.createElement('div');
       jobElement.classList.add('job');
       jobElement.innerHTML = jobQuery(job);
-      
-      
-      
-      
+
       jobsList.appendChild(jobElement);
     });
   })

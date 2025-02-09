@@ -27,6 +27,16 @@ h1, h2, h3, h4, h5, h6,
     color: var(--dark) !important;
 }
 
+ .navbar {
+    height: 75px !important;
+}
+
+@media (max-width: 992px) {
+    .navbar {
+        height: fit-content !important;
+    }
+}
+
 .logo {
     width: 100px !important;
 }
@@ -34,6 +44,10 @@ h1, h2, h3, h4, h5, h6,
 .nav-containor-button {
     display: flex ;
     gap: 5px !important;
+    a {
+        padding-left: 0 !important;
+        padding-right: 5px !important;
+    }
 }
 
 .nav-button {
